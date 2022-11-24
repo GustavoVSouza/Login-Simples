@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --bg-color: rgb(29, 29, 29);
+    --bg-color-escuro: rgb(20, 20, 20);
+    --branco: white;
+    --fonte:'Kanit', sans-serif;
+    --cor-principal: rgb(0 , 255, 0);
+    --cor-principal-transparente: rgba(0, 255, 0, 0.1);
+}
+
+
+a::selection {
+    background: var(--cor-principal);
+    color: var(--bg-color-escuro);
+}
+
+button::selection {
+    background: var(--cor-principal);
+    color: var(--bg-color-escuro);
+}
+
+h1::selection {
+    background: var(--cor-principal);
+    color: var(--bg-color-escuro);
+}
+
+img::selection {
+    background: var(--cor-principal);
+}
+
+:placeholder-shown::selection {
+    color: var(--cor-principal);
+}
+
+a {
+    color: var(--cor-principal);
+    font-family: var(--fonte);
+    text-decoration: none;
+}
+
+body {
+    background: var(--bg-color);
+    color: white;
+}
+
+#conteudo {
+    align-items: center;
+    background: var(--bg-color-escuro);
+    border: 1px solid var(--cor-principal);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    left: 35%;
+    padding: 5rem 0 5rem 0;
+    position: fixed;
+    top: 5rem;
+    transition: 0.2s;
+    width: 20rem;
+}
+
+#conteudo:hover {
+    filter: drop-shadow(0 0 250px var(--cor-principal));
+}
+
+.login__titulo {
+    font-family: var(--fonte);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo__img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.login__form_input {
+    background: transparent;
+    border: 1px solid var(--cor-principal);
+    border-radius: 5px;
+    color: var(--branco);
+    font-family: var(--fonte);
+    margin: 1rem 0 1rem 0;
+    padding: 5px 5px;
+    text-align: center;
+
+}
+
+.login__form_input:hover {
+    background: var(--cor-principal-transparente);
+}
+
+.login__form_botao {
+    background-color: var(--cor-principal);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--bg-color-escuro);
+    cursor: pointer;
+    font-family: var(--fonte);
+    font-size: 1rem;
+    padding: 0.3rem;
+    transition: 0.2s;
+    width: 70%;
+}
+
+.login__form_botao:hover {
+    border-radius: 1rem;
+    color: var(--bg-color-escuro);
+    cursor: pointer;
+}
+
+.cadastrar, .esqueceuSenha {
+    margin: 1rem 0 0 0;
+}
+
+.cadastrar:hover, .esqueceuSenha:hover {
+    text-decoration: underline;
+}

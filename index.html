@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="conteudo">
+        <h1 class="login__titulo">Login</h1>
+        <form class="login__form">
+            <img src="assets/img/user.png" class="conteudo__img" alt="">
+            <input type="text" class="login__form_input" required placeholder="User">
+            <img src="assets/img/senha.png" class="conteudo__img" alt="">
+            <input type="password" class="login__form_input" required placeholder="Senha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$">
+            <button class="login__form_botao">Entrar</button>
+        </form>
+        <a href="#" class="esqueceuSenha">Esqueceu senha?</a>
+        <a href="#" class="cadastrar">Cadastrar</a>
+    </div>
+</body>
+</html>
+<!--
+    (?=.*\d)              // deve conter ao menos um dígito
+    (?=.*[a-z])           // deve conter ao menos uma letra minúscula
+    (?=.*[A-Z])           // deve conter ao menos uma letra maiúscula
+    (?=.*[$*&@#])         // deve conter ao menos um caractere especial
+    [0-9a-zA-Z$*&@#]{8,}  // deve conter ao menos 8 dos caracteres mencionados-->
